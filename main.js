@@ -1,5 +1,59 @@
 // Your code here.
 
+function getFirstName(person){
+  return person.firstName
+}
+
+let person = {firstName: 'Johnny', lastName: 'Bravo'}
+
+console.log(getFirstName(person))
+console.log(getLastName({firstName: 'Johnny', lastName: 'Bravo'}))
+
+
+function getLastName(person){
+  return person.lastName
+}
+
+console.log(getLastName(person))
+console.log(getLastName({firstName: 'Johnny', lastName: 'Bravo'}))
+
+
+function getFullName(person){
+  return person.firstName + " " + person.lastName
+}
+
+console.log(getLastName(person))
+console.log(getLastName({firstName: 'Johnny', lastName: 'bravo'}))
+
+
+function setFirstName(person, newFirstName){
+  person.firstName = newFirstName
+}
+
+setFirstName(person, 'Andrea')
+console.log(person)
+
+
+function setAge(perosn, newAge){
+  person.age = newAge
+}
+setFirstName(person1, 25)
+setFirstName(person2, 33)
+
+
+function giveBirthday(person){
+  
+  if(person.age === undefined){
+    person.age = 1
+  } else if (person.age !== undefined){
+    person.age += 1
+  }
+}
+
+giveBirthday(person)
+giveBirthday(person2)
+console.log(person)
+console.log(person2)
 
 
 
